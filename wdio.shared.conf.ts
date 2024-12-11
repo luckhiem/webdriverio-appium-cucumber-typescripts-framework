@@ -1,8 +1,10 @@
+
+
 export const config: WebdriverIO.Config = {
     runner: 'local',
     tsConfigPath: './tsconfig.json',
     specs: [
-        './src/features/ElfieHomePage.feature'
+        './src/features/**.feature'
     ],
     exclude: [
         // 'path/to/excluded/files'

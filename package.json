@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test-android": "wdio run ./wdio.android.conf.ts",
-    "test-ios": "wdio run ./wdio.ios.conf.ts"
+    "test-android": "wdio run ./wdio.android.conf.ts --cucumberOpts.tagExpression='@demo'",
+    "test-ios": "wdio run ./wdio.ios.conf.ts --cucumberOpts.tagExpression='@demo'"
   },
   "keywords": [],
   "author": "",
