@@ -3,12 +3,16 @@ import { expect } from '@wdio/globals'
 
 import GooglePage from '../pageobjects/google.page';
 import HomePage from '../pageobjects/home.page';
+import ConfigLoader from '../env/configLoader';
+
+// Usage
+const config = ConfigLoader.loadConfig();
 
 /**
  * Step definition for interacting with the Google and Elfie website.
  */
 Given(/^I am on the Google homepage$/, async () => {
-    await browser.url('https://www.google.com/');
+    await browser.url(config.googleURL);
 });
 
 When(/^I search for "(.*)"$/, async (keyword: string) => {

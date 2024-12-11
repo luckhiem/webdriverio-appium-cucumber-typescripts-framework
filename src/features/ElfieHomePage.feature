@@ -1,3 +1,4 @@
+@demo
 Feature: Interact with Elfie Website
 
   Scenario: Search for Elfie and interact with the website
