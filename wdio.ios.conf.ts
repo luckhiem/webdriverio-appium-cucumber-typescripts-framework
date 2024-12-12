@@ -20,10 +20,10 @@ export const config = {
     ],
     path: '/wd/hub',
     capabilities: [{
-        platformName: 'Android',
+        platformName: 'iOS',
         browserName: 'Chrome',
-        'appium:deviceName': 'Emulator',
-        'appium:platformVersion': '13.0',
-        'appium:automationName': 'UiAutomator2'
+        'appium:deviceName': 'iPhone 13 Pro Max',
+        'appium:platformVersion': '18.0.1',
+        'appium:automationName': 'xcuitest'
     }],
 };
